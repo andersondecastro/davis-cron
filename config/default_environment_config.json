@@ -1,0 +1,12 @@
+{
+    "email": {
+        "default_from": "noreply@company.com",
+        "default_password": "INSERT-PASS-HERE"
+    },
+    "db": {
+        "default_url": "mongodb://localhost/database"
+    },
+    "server": {
+        "default_port": 4500
+    }
+}
