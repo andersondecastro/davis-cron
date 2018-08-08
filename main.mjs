@@ -1,7 +1,7 @@
-import app from 'src/app.mjs'
-import Server from 'src/common/Server.mjs'
-import environment from 'src/common/environment.mjs'
-import logger from 'src/common/logger.mjs'
+import app from './src/app.mjs'
+import Server from './src/common/Server.mjs'
+import environment from './src/common/environment.mjs'
+import logger from './src/common/logger.mjs'
 
 const server = new Server(app, environment)
 server.start()
