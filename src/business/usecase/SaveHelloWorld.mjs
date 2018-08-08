@@ -6,6 +6,9 @@ export default class SaveHelloWorld {
             if(!this.isValidPayload(incomePayload))
                 throw new Error('Invalid Payload')
             
+            if(await helloWorldRepository.isAlreadyPersisted(incomePayload))
+                throw new Error('Payload already persisted')
+                    
             const savedHelloWorld =  await helloWorldRepository.save(incomePayload)
             responder.success({savedHelloWorld})
 

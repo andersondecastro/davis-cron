@@ -18,6 +18,14 @@ class HelloWorldRepository {
     async delete(payload){
         return HelloWorld.remove(payload)
     }
+
+    async isAlreadyPersisted(payload){
+        const resultQuery = await this.find(payload)
+        if(!resultQuery.length)
+            return false
+        else
+            return true
+    }
 }
 
 export default new HelloWorldRepository()

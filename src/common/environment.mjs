@@ -35,6 +35,11 @@ export default {
     },
 
     server: {
+        host: process.env.HOST || 'http://127.0.0.1',
         port: process.env.PORT || defaultEnvironmentConfig.server.default_port
+    },
+
+    microservices: {
+        ANOTHER_MICROSERVICE_PORT: process.env.ANOTHER_MICROSERVICE_PORT || 4500
     }
 }

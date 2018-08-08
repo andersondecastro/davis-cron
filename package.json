@@ -17,6 +17,7 @@
     "url": "git@github.com:agrointeli/microservice-demo.git"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "~1.13.2",
     "bunyan": "^1.8.12",
     "cors": "^2.8.4",
