@@ -40,6 +40,6 @@ export default {
     },
 
     microservices: {
-        ANOTHER_MICROSERVICE_PORT: process.env.ANOTHER_MICROSERVICE_PORT || 4500
+        DATAS_PORT: process.env.DATAS_PORT || 4200
     }
 }
