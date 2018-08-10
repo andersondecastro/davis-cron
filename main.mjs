@@ -17,7 +17,7 @@ server.start()
             let date = new Date()
             logger.info(`${date.getMinutes()}:${date.getSeconds()}`)
         })
-        schedule.scheduleJob('* * * * *', () => {
+        schedule.scheduleJob('*/30 * * * *', () => {
             logger.info('STARTING...')
             davisCrawler.execute()
         })
