@@ -18,8 +18,8 @@ export default class DavisCrawler {
             const weatherLinkHTML = await davisNetwork.requestWeatherlinkData(options)
             this.getDavisObjectFromResponse(weatherLinkHTML.data)
                 .then( (result) => {
-                    result.platformId = '5b6ca643b4bb778436101023'
-                    result.propertyId = '1234'
+                    result.platformId = '5b6b3a8cc995ad3a63a9b2bb'
+                    result.propertyId = '123'
                     davisNetwork.sendWeatherLinkData(result)
                     console.log(result)
                 })
