@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name      : 'Microservice API',
+    name      : 'Davis CRON',
     script    : 'npm start',
     env: {
       NODE_ENV: 'development'
