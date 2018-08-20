@@ -13,10 +13,10 @@ server.start()
         const davisCrawler = new DavisCrawler()
 
         logger.info('SCHEDULE START')
-        schedule.scheduleJob('* * * * * *', function(){
-            let date = new Date()
-            logger.info(`${date.getMinutes()}:${date.getSeconds()}`)
-        })
+        // schedule.scheduleJob('* * * * * *', function(){
+        //     let date = new Date()
+        //     logger.info(`${date.getMinutes()}:${date.getSeconds()}`)
+        // })
         schedule.scheduleJob('*/30 * * * *', () => {
             logger.info('STARTING...')
             davisCrawler.execute()
